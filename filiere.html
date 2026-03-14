@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Filières — ESF Bénin</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- React 18 + Babel pour l'interface en React -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+
+
+<header>
+    <nav class="menu">
+        <div class="logo">
+            <a href="accueil.html">
+                <img src="images/logo.png" alt="Logo ESF Bénin">
+            </a>
+        </div>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="accueil.html">Accueil</a></li>
+            <li><a href="filiere.html" class="active">Nos Filières</a></li>
+            <li><a href="admission.html">Admission</a></li>
+            <li><a href="nous_contacter.html">Nous Contacter</a></li>
+            <li><a href="vie_universitaire.html">Vie Universitaire</a></li>
+        </ul>
+
+        <div class="bar" id="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+</header>
+
+
+<main>
+    <div id="react-root-filieres"></div>
+</main>
+
+<footer>
+    <p>© 2026 ESF Bénin — Tous droits réservés. | <a href="nous_contacter.html">Nous Contacter</a></p>
+</footer>
+
+<script type="text/babel" src="react-app.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
